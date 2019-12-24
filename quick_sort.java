@@ -29,9 +29,9 @@ public class quick_sort {
     }
 
     public static long quick_sort(int[]A, int lo, int hi) {
-        long comp=0;                                           // also can be done
-                                                               // from Princeton university coursera course
-        if (lo < hi) {                                         //  Algorithm part 1
+        long comp=0;                                        
+                                                              
+        if (lo < hi) {                                     
             int mid=lo+ (hi-lo)/2;
             int m=median(A,lo,hi,mid);
             int t1=A[m]; A[m]=A[lo]; A[lo]=t1;
